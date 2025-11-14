@@ -1,0 +1,96 @@
+body.pagina-examen {
+  background-color: #728faf; /* azul brillante */
+  color: white;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  text-align: center;
+}
+
+h2, h3 {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+form {
+  max-width: 90%;
+  margin: 20px auto;
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  text-align: left; /* 🔹 hace que todo el contenido del examen se alinee a la izquierda */
+}
+
+/* --- Alineación de preguntas y opciones --- */
+ol {
+  list-style-position: outside;
+  padding-left: 25px;
+}
+
+li {
+  margin-bottom: 18px;
+  line-height: 1.6;
+}
+
+input[type="radio"] {
+  margin-left: 10px;
+}
+
+/* --- Botones --- */
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #003f88;
+}
+
+input[type="submit"] {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #00bfff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0099cc;
+}
+
+/* --- Campos de texto y selección --- */
+#texto, #correo, #cal, #eleccionDeNombre {
+  width: 100%;
+  max-width: 400px;
+  margin: 10px 0;
+  padding: 5px;
+  border-radius: 6px;
+  border: none;
+}
+
+/* --- Adaptación a pantallas pequeñas --- */
+@media (max-width: 600px) {
+  body.pagina-examen {
+    padding: 10px;
+  }
+
+  form {
+    padding: 15px;
+  }
+
+  h2, h3 {
+    font-size: 1rem;
+  }
+
+  button, input[type="submit"] {
+    width: 100%;
+  }
+}
